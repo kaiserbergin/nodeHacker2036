@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Node Hacker/Tests/ICE/Standard ICE Fire.unity
+  isLoaded: 1
+  isActive: 1
