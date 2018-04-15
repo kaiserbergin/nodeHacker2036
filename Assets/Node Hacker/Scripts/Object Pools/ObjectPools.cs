@@ -29,7 +29,6 @@ public class ObjectPools : MonoBehaviour {
                 poolSetting.pooledObject,
                 new ObjectPool(0, gameObjList)
             );
-            Debug.Log($"game object list of: {pools[poolSetting.pooledObject].pooledObjects.Count}");
         } 
 	}
 	

@@ -713,10 +713,10 @@ PlayerSettings:
     Game_Performance: 0
     Hub: 0
     Purchasing: 0
-    UNet: 0
+    UNet: 1
     Unity_Ads: 0
   facebookSdkVersion: 7.9.4
-  apiCompatibilityLevel: 2
+  apiCompatibilityLevel: 3
   cloudProjectId: ae55a78a-6ea4-4bac-96fa-e53da31f4e9a
   projectName: Node Hacker 2036
   organizationId: kaiserbergin

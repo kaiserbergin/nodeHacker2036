@@ -25,23 +25,26 @@ public class StandardICEController : MonoBehaviour {
 
         facing = gameObject.AddComponent<Facing>();
 
-        visionRange.validTargets = new List<GameObject> { target };
+        if(target != null) {
+            visionRange.validTargets = new List<GameObject> { target };
+        }        
     }
 	
 	// Update is called once per frame
 	void Update () {        
         #region Rotate towards Target
-        if (visionRange.CanViewTarget(target)) {
-            lookRotation.transform.rotation = lookRotation.GetRotationTowardsTarget(target.transform);
+        if (target != null) {
+            if (visionRange.CanViewTarget(target)) {
+                lookRotation.transform.rotation = lookRotation.GetRotationTowardsTarget(target.transform);
 
-            #region Fire Primary Weapon 
-            if (fireProjectileCooldown.IsOffCooldown() && facing.IsFacingDirectlyAtTarget(target)) {
-                fireProjectile.Fire(projectileOriginTransform, target.transform.position);
-                fireProjectileCooldown.OnActionActivated();
+                #region Fire Primary Weapon 
+                if (fireProjectileCooldown.IsOffCooldown() && facing.IsFacingDirectlyAtTarget(target)) {
+                    fireProjectile.Fire(projectileOriginTransform, target.transform.position);
+                    fireProjectileCooldown.OnActionActivated();
+                }
+                #endregion
             }
-            #endregion
-        }
+        }        
         #endregion
-
     }
 }
