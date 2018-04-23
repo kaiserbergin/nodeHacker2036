@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114617109444942976}
   - component: {fileID: 114915185168229224}
   - component: {fileID: 114888312933139262}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Standard ICE Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4050803427783000}
   - component: {fileID: 198463578652711358}
   - component: {fileID: 199322383140805028}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Standard ICE Bullet Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}

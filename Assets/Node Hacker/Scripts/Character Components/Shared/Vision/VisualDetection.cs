@@ -5,6 +5,12 @@ using System;
 
 public class VisualDetection : MonoBehaviour {
     public float fieldOfView;
+    private int layerMask;
+
+    private void Start() {
+        layerMask = 1 << 9;
+        layerMask = ~layerMask;
+    }
 
     public bool CanViewTarget(Collider target) {
         Vector3 direction = target.transform.position - transform.position;
@@ -12,7 +18,7 @@ public class VisualDetection : MonoBehaviour {
         if(angle < fieldOfView * .5f) {
             RaycastHit hit;
 
-            if(Physics.Raycast(transform.position, direction.normalized, out hit)) {
+            if(Physics.Raycast(transform.position, direction.normalized, out hit, Mathf.Infinity, layerMask)) {
                 return hit.collider.gameObject.GetInstanceID() == target.gameObject.GetInstanceID();
             }
         }

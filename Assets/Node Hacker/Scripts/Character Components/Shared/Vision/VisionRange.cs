@@ -17,7 +17,7 @@ public class VisionRange : MonoBehaviour {
                 if (other.gameObject.CompareTag(target.tag)) {
                     if (visualDetection.CanViewTarget(other) && !viewedTargets.Contains(other.gameObject)) {
                         viewedTargets.Add(other.gameObject);
-                    } else if (viewedTargets.Contains(other.gameObject)) {
+                    } else if (!visualDetection.CanViewTarget(other) && viewedTargets.Contains(other.gameObject)) {
                         viewedTargets.Remove(other.gameObject);
                     }
                 }

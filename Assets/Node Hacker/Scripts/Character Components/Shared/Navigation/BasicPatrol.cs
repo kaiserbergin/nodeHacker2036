@@ -29,7 +29,9 @@ public class BasicPatrol : MonoBehaviour {
 
     void Update() {
         if (CanPatrol() && patrolModeEnabled && ArrivedAtWaypoint()) {
+            Debug.Log("got there");
             if (isWaiting) {
+                Debug.Log("waiting!");
                 waitTime -= Time.deltaTime;
                 if (waitTime <= 0) {
                     currentWaypointIndex = GetNextWaypoint();
@@ -41,11 +43,15 @@ public class BasicPatrol : MonoBehaviour {
             if (!isWaiting) {
                 SetWaitTime();
                 isWaiting = true;
+                Debug.Log($"time to start waiting for {waitTime} seconds!");
+
             }
         }
     }
 
-    private void NavigateToNextWayPoint() {
+    public void NavigateToNextWayPoint() {
+        waitTime = 0;
+        isWaiting = false;
         navMeshAgent.SetDestination(patrolWayPoints[currentWaypointIndex].transform.position);
     }
 

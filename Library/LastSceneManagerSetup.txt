@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Node Hacker/Tests/ICE/Standard ICE/Standard ICE Patrol Basic.unity
+- path: Assets/Node Hacker/Tests/ICE/Standard ICE/Standard ICE Behavior.unity
   isLoaded: 1
   isActive: 1
