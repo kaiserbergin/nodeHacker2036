@@ -1,0 +1,285 @@
+fileFormatVersion: 2
+guid: 19dc4ec4a3c34c44290f726a2dcb29d7
+timeCreated: 1525207296
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Component.000
+    100002: Component.001
+    100004: Component.002
+    100006: Component.003
+    100008: Component.004
+    100010: Component.005
+    100012: Component.006
+    100014: Component.007
+    100016: Component.008
+    100018: Component.009
+    100020: Component.010
+    100022: Component.011
+    100024: Cube.006
+    100026: Cube.007
+    100028: Cube.009
+    100030: Cube.012
+    100032: Cube.015
+    100034: Cube.027
+    100036: Cube.029
+    100038: Cube.030
+    100040: Cylinder.287
+    100042: Cylinder.288
+    100044: Cylinder.289
+    100046: Cylinder.290
+    100048: Metal pieces
+    100050: mobo
+    100052: //RootNode
+    100054: ram1.012
+    100056: ram1.013
+    100058: ram1.014
+    100060: ram1.015
+    100062: ram1.016
+    100064: ram1.017
+    100066: ram1.018
+    100068: ram1.019
+    100070: ram1.020
+    100072: Sphere
+    100074: Sphere.001
+    100076: Sphere.002
+    100078: Sphere.003
+    400000: Component.000
+    400002: Component.001
+    400004: Component.002
+    400006: Component.003
+    400008: Component.004
+    400010: Component.005
+    400012: Component.006
+    400014: Component.007
+    400016: Component.008
+    400018: Component.009
+    400020: Component.010
+    400022: Component.011
+    400024: Cube.006
+    400026: Cube.007
+    400028: Cube.009
+    400030: Cube.012
+    400032: Cube.015
+    400034: Cube.027
+    400036: Cube.029
+    400038: Cube.030
+    400040: Cylinder.287
+    400042: Cylinder.288
+    400044: Cylinder.289
+    400046: Cylinder.290
+    400048: Metal pieces
+    400050: mobo
+    400052: //RootNode
+    400054: ram1.012
+    400056: ram1.013
+    400058: ram1.014
+    400060: ram1.015
+    400062: ram1.016
+    400064: ram1.017
+    400066: ram1.018
+    400068: ram1.019
+    400070: ram1.020
+    400072: Sphere
+    400074: Sphere.001
+    400076: Sphere.002
+    400078: Sphere.003
+    2100000: No Name
+    2300000: Component.000
+    2300002: Component.001
+    2300004: Component.002
+    2300006: Component.003
+    2300008: Component.004
+    2300010: Component.005
+    2300012: Component.006
+    2300014: Component.007
+    2300016: Component.008
+    2300018: Component.009
+    2300020: Component.010
+    2300022: Component.011
+    2300024: Cube.006
+    2300026: Cube.007
+    2300028: Cube.009
+    2300030: Cube.012
+    2300032: Cube.015
+    2300034: Cube.027
+    2300036: Cube.029
+    2300038: Cube.030
+    2300040: Cylinder.287
+    2300042: Cylinder.288
+    2300044: Cylinder.289
+    2300046: Cylinder.290
+    2300048: Metal pieces
+    2300050: mobo
+    2300052: ram1.012
+    2300054: ram1.013
+    2300056: ram1.014
+    2300058: ram1.015
+    2300060: ram1.016
+    2300062: ram1.017
+    2300064: ram1.018
+    2300066: ram1.019
+    2300068: ram1.020
+    2300070: Sphere
+    2300072: Sphere.001
+    2300074: Sphere.002
+    2300076: Sphere.003
+    3300000: Component.000
+    3300002: Component.001
+    3300004: Component.002
+    3300006: Component.003
+    3300008: Component.004
+    3300010: Component.005
+    3300012: Component.006
+    3300014: Component.007
+    3300016: Component.008
+    3300018: Component.009
+    3300020: Component.010
+    3300022: Component.011
+    3300024: Cube.006
+    3300026: Cube.007
+    3300028: Cube.009
+    3300030: Cube.012
+    3300032: Cube.015
+    3300034: Cube.027
+    3300036: Cube.029
+    3300038: Cube.030
+    3300040: Cylinder.287
+    3300042: Cylinder.288
+    3300044: Cylinder.289
+    3300046: Cylinder.290
+    3300048: Metal pieces
+    3300050: mobo
+    3300052: ram1.012
+    3300054: ram1.013
+    3300056: ram1.014
+    3300058: ram1.015
+    3300060: ram1.016
+    3300062: ram1.017
+    3300064: ram1.018
+    3300066: ram1.019
+    3300068: ram1.020
+    3300070: Sphere
+    3300072: Sphere.001
+    3300074: Sphere.002
+    3300076: Sphere.003
+    4300000: Component.011
+    4300002: Cylinder.290
+    4300004: Cube.030
+    4300006: Cube.029
+    4300008: Cube.027
+    4300010: Metal pieces
+    4300012: Cylinder.289
+    4300014: Cylinder.288
+    4300016: Cylinder.287
+    4300018: ram1.020
+    4300020: ram1.019
+    4300022: ram1.018
+    4300024: ram1.017
+    4300026: ram1.016
+    4300028: ram1.015
+    4300030: ram1.014
+    4300032: ram1.013
+    4300034: ram1.012
+    4300036: Cube.015
+    4300038: Component.007
+    4300040: Component.010
+    4300042: Sphere.003
+    4300044: Cube.012
+    4300046: Component.009
+    4300048: Component.008
+    4300050: Cube.009
+    4300052: Sphere.002
+    4300054: Component.000
+    4300056: Cube.007
+    4300058: Sphere.001
+    4300060: Sphere
+    4300062: Cube.006
+    4300064: Component.005
+    4300066: Component.006
+    4300068: Component.004
+    4300070: Component.003
+    4300072: Component.002
+    4300074: Component.001
+    4300076: mobo
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
