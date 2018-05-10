@@ -43,10 +43,11 @@ public class PlayerTeleporter : MonoBehaviour {
     private void GroundCast() {
         teleportationCoords = player.transform.position;
         RaycastHit groundRay;
-        if (Physics.Raycast(teleportationCoords, -Vector3.up, out groundRay, 100, teleportationSurface)) {
+        Vector3 pointInSpace = origin.transform.forward * 15 + origin.transform.position;
+        if (Physics.Raycast(pointInSpace, -Vector3.up, out groundRay, 100, teleportationSurface)) {
             teleportationCoords = groundRay.point;
         }
-        SetTeleportationIndicators(origin.transform.forward * 15 + origin.transform.position, teleportationCoords);
+        SetTeleportationIndicators(pointInSpace, teleportationCoords);
     }
 
     private void SetTeleportationIndicators(Vector3 teleportationCoords) {

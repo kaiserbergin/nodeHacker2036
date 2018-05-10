@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 8
+  serializedVersion: 9
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -39,6 +39,7 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -54,11 +55,10 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 9
+    serializedVersion: 10
     m_Resolution: 2
     m_BakeResolution: 40
-    m_TextureWidth: 1024
-    m_TextureHeight: 1024
+    m_AtlasSize: 1024
     m_AO: 0
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
@@ -245,6 +245,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: b3a499e9be24bfe4a8eba71b97724989, type: 2}
   m_StaticBatchInfo:
@@ -410,6 +411,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: b3a499e9be24bfe4a8eba71b97724989, type: 2}
   m_StaticBatchInfo:
@@ -510,6 +512,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: b3a499e9be24bfe4a8eba71b97724989, type: 2}
   m_StaticBatchInfo:
@@ -610,6 +613,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: b3a499e9be24bfe4a8eba71b97724989, type: 2}
   m_StaticBatchInfo:
@@ -710,6 +714,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: b3a499e9be24bfe4a8eba71b97724989, type: 2}
   m_StaticBatchInfo:
@@ -794,6 +799,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
@@ -936,6 +942,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: b3a499e9be24bfe4a8eba71b97724989, type: 2}
   m_StaticBatchInfo:
@@ -1051,76 +1058,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1252316972
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1252316973}
-  - component: {fileID: 1252316976}
-  - component: {fileID: 1252316975}
-  - component: {fileID: 1252316974}
-  m_Layer: 0
-  m_Name: Vision Component
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1252316973
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1252316972}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 50, y: 50, z: 50}
-  m_Children: []
-  m_Father: {fileID: 1368437086}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1252316974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1252316972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2ddfcce7ea83304ba26fb4e9fcea7dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fieldOfView: 110
---- !u!114 &1252316975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1252316972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5dd3b9188273844c957561a9798a06c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  validTargets:
-  - {fileID: 0}
-  visualDetection: {fileID: 1252316974}
-  viewedTargets: []
---- !u!135 &1252316976
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1252316972}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1273491876
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,11 +1149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1822938466}
---- !u!4 &1368437086 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4587401805229420, guid: c5197e2269974cb4da19a7db4145f381,
-    type: 2}
-  m_PrefabInternal: {fileID: 1920729499}
 --- !u!114 &1368437087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1383,6 +1315,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: b3a499e9be24bfe4a8eba71b97724989, type: 2}
   m_StaticBatchInfo:
@@ -1530,6 +1463,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
@@ -1649,6 +1583,31 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7983612eaa041544d8e75c8c27793b3d, type: 2}
+    - target: {fileID: 114321996237757850, guid: c5197e2269974cb4da19a7db4145f381,
+        type: 2}
+      propertyPath: patrolWayPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1940014795}
+    - target: {fileID: 114321996237757850, guid: c5197e2269974cb4da19a7db4145f381,
+        type: 2}
+      propertyPath: patrolWayPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 1064854523}
+    - target: {fileID: 114321996237757850, guid: c5197e2269974cb4da19a7db4145f381,
+        type: 2}
+      propertyPath: patrolWayPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 1273491878}
+    - target: {fileID: 114321996237757850, guid: c5197e2269974cb4da19a7db4145f381,
+        type: 2}
+      propertyPath: patrolWayPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 147958169}
+    - target: {fileID: 114321996237757850, guid: c5197e2269974cb4da19a7db4145f381,
+        type: 2}
+      propertyPath: patrolWayPoints.Array.data[4]
+      value: 
+      objectReference: {fileID: 1126370644}
     m_RemovedComponents:
     - {fileID: 114472106678636202, guid: c5197e2269974cb4da19a7db4145f381, type: 2}
     - {fileID: 114520045629199860, guid: c5197e2269974cb4da19a7db4145f381, type: 2}

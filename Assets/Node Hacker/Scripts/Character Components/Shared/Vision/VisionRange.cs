@@ -14,13 +14,15 @@ public class VisionRange : MonoBehaviour {
     private void OnTriggerStay(Collider other) {
         if (visualDetection != null && validTargets != null && validTargets.Count > 0) {
             foreach (GameObject target in validTargets) {
-                if (other.gameObject.CompareTag(target.tag)) {
-                    if (visualDetection.CanViewTarget(other) && !viewedTargets.Contains(other.gameObject)) {
-                        viewedTargets.Add(other.gameObject);
-                    } else if (!visualDetection.CanViewTarget(other) && viewedTargets.Contains(other.gameObject)) {
-                        viewedTargets.Remove(other.gameObject);
+                if(target != null) {
+                    if (other.gameObject.CompareTag(target.tag)) {
+                        if (visualDetection.CanViewTarget(other) && !viewedTargets.Contains(other.gameObject)) {
+                            viewedTargets.Add(other.gameObject);
+                        } else if (!visualDetection.CanViewTarget(other) && viewedTargets.Contains(other.gameObject)) {
+                            viewedTargets.Remove(other.gameObject);
+                        }
                     }
-                }
+                }                
             }
         }
     }
@@ -28,9 +30,11 @@ public class VisionRange : MonoBehaviour {
     private void OnTriggerExit(Collider other) {
         if (visualDetection != null && validTargets != null && validTargets.Count > 0) {
             foreach (GameObject target in validTargets) {
-                if (other.gameObject.CompareTag(target.tag) && viewedTargets.Contains(other.gameObject)) {
-                    viewedTargets.Remove(other.gameObject);
-                }
+                if(target != null) {
+                    if (other.gameObject.CompareTag(target.tag) && viewedTargets.Contains(other.gameObject)) {
+                        viewedTargets.Remove(other.gameObject);
+                    }
+                }                
             }
         }
     }
