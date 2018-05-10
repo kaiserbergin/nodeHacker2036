@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Node Hacker/Tests/Player/Teleportation.unity
+- path: Assets/Node Hacker/Tests/ICE/Standard ICE/Standard ICE Follow.unity
   isLoaded: 1
   isActive: 1

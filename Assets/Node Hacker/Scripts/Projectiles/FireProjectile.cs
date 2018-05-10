@@ -16,4 +16,15 @@ public class FireProjectile : MonoBehaviour {
             rb.velocity = (target - origin.position).normalized * projectilePrefab.magnitude;
         }
     }
+
+    public void FireForward(Transform origin) {
+        projectile = projectilePrefab.GetProjectileInstance();
+        projectile.transform.position = origin.transform.position;
+        projectile.transform.rotation = origin.transform.rotation;
+
+        Rigidbody rb = projectile.GetComponentInChildren<Rigidbody>();
+        if (rb != null) {
+            rb.velocity = (origin.forward).normalized * projectilePrefab.magnitude;
+        }
+    }
 }

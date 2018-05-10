@@ -636,8 +636,12 @@
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
     <Compile Include="Assets\Node Hacker\Scripts\Character Components\NPC\ICE\StandardICEController.cs" />
+    <Compile Include="Assets\Node Hacker\Scripts\Character Components\Player\Controller Interfaces\OculusTouchTeleportationInterface.cs" />
+    <Compile Include="Assets\Node Hacker\Scripts\Character Components\Player\Controller Interfaces\OculusTouchWeaponInterface.cs" />
     <Compile Include="Assets\Node Hacker\Scripts\Character Components\Player\Health.cs" />
+    <Compile Include="Assets\Node Hacker\Scripts\Character Components\Player\PistolController.cs" />
     <Compile Include="Assets\Node Hacker\Scripts\Character Components\Player\PlayerDamage.cs" />
+    <Compile Include="Assets\Node Hacker\Scripts\Character Components\Player\PlayerTeleporter.cs" />
     <Compile Include="Assets\Node Hacker\Scripts\Character Components\Shared\Actions\ActionCoolDown.cs" />
     <Compile Include="Assets\Node Hacker\Scripts\Character Components\Shared\Movement\Facing.cs" />
     <Compile Include="Assets\Node Hacker\Scripts\Character Components\Shared\Movement\LookRotation.cs" />
