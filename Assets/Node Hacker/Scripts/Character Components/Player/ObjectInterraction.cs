@@ -94,7 +94,6 @@ public class ObjectInterraction : MonoBehaviour {
     private void DropViaParenting(GameObject interractibleObject) {
         interractibleObject.transform.SetParent(null);
         Rigidbody rb = interractibleObject.GetComponent<Rigidbody>();
-        if (rb != null) rb.isKinematic = false;
     }
 
     #endregion

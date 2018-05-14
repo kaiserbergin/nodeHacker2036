@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Node Hacker/Tests/Puzzles/Roller Ball.unity
+- path: Assets/Node Hacker/Tests/Combat/Standard ICE Combat.unity
   isLoaded: 1
   isActive: 1

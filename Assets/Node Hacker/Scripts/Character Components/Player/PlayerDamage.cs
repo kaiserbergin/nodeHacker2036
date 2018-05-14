@@ -11,6 +11,8 @@ public class PlayerDamage : MonoBehaviour, Damage {
         if(playerHealth != null) {
             playerHealth.health -= damage;
             Debug.Log($"Player Health: {playerHealth.health}");
+        } else {
+            Debug.LogError("Cannot take damage if there is no health component, fool!");
         }
     }
 }
