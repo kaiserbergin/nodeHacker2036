@@ -1,0 +1,524 @@
+fileFormatVersion: 2
+guid: d15e590afc0bde24795991c75a69b231
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Component.000
+    100002: Component.001
+    100004: Component.002
+    100006: Component.003
+    100008: Component.004
+    100010: Component.005
+    100012: Component.006
+    100014: Component.007
+    100016: Component.008
+    100018: Component.009
+    100020: Component.010
+    100022: Component.011
+    100024: Component.012
+    100026: Component.013
+    100028: Component.014
+    100030: Component.015
+    100032: Component.016
+    100034: Component.017
+    100036: Component.018
+    100038: Component.019
+    100040: Component.020
+    100042: Component.021
+    100044: Component.022
+    100046: Component.023
+    100048: Cube.000
+    100050: Cube.001
+    100052: Cube.006
+    100054: Cube.007
+    100056: Cube.009
+    100058: Cube.012
+    100060: Cube.015
+    100062: Cube.027
+    100064: Cube.029
+    100066: Cube.030
+    100068: Cylinder.000
+    100070: Cylinder.287
+    100072: Cylinder.288
+    100074: Cylinder.289
+    100076: Cylinder.290
+    100078: Metal pieces
+    100080: Metal pieces.001
+    100082: Metal pieces.002
+    100084: Metal pieces.003
+    100086: Metal pieces.004
+    100088: Metal pieces.005
+    100090: Metal pieces.006
+    100092: Metal pieces.007
+    100094: Metal pieces.008
+    100096: Metal pieces.009
+    100098: Metal pieces.010
+    100100: Metal pieces.011
+    100102: Metal pieces.012
+    100104: Metal pieces.013
+    100106: Metal pieces.014
+    100108: Metal pieces.015
+    100110: Metal pieces.016
+    100112: Metal pieces.017
+    100114: Metal pieces.018
+    100116: Metal pieces.019
+    100118: Metal pieces.020
+    100120: Metal pieces.021
+    100122: Metal pieces.022
+    100124: Metal pieces.023
+    100126: Metal pieces.024
+    100128: Metal pieces.025
+    100130: Metal pieces.026
+    100132: Metal pieces.027
+    100134: Metal pieces.028
+    100136: Metal pieces.029
+    100138: Metal pieces.030
+    100140: Metal pieces.031
+    100142: Metal pieces.032
+    100144: Metal pieces.033
+    100146: mobo
+    100148: //RootNode
+    100150: ram1.012
+    100152: ram1.013
+    100154: ram1.014
+    100156: ram1.015
+    100158: ram1.016
+    100160: ram1.017
+    100162: ram1.018
+    100164: ram1.019
+    100166: ram1.020
+    100168: Sphere
+    100170: Sphere.001
+    100172: Sphere.002
+    100174: Sphere.003
+    400000: Component.000
+    400002: Component.001
+    400004: Component.002
+    400006: Component.003
+    400008: Component.004
+    400010: Component.005
+    400012: Component.006
+    400014: Component.007
+    400016: Component.008
+    400018: Component.009
+    400020: Component.010
+    400022: Component.011
+    400024: Component.012
+    400026: Component.013
+    400028: Component.014
+    400030: Component.015
+    400032: Component.016
+    400034: Component.017
+    400036: Component.018
+    400038: Component.019
+    400040: Component.020
+    400042: Component.021
+    400044: Component.022
+    400046: Component.023
+    400048: Cube.000
+    400050: Cube.001
+    400052: Cube.006
+    400054: Cube.007
+    400056: Cube.009
+    400058: Cube.012
+    400060: Cube.015
+    400062: Cube.027
+    400064: Cube.029
+    400066: Cube.030
+    400068: Cylinder.000
+    400070: Cylinder.287
+    400072: Cylinder.288
+    400074: Cylinder.289
+    400076: Cylinder.290
+    400078: Metal pieces
+    400080: Metal pieces.001
+    400082: Metal pieces.002
+    400084: Metal pieces.003
+    400086: Metal pieces.004
+    400088: Metal pieces.005
+    400090: Metal pieces.006
+    400092: Metal pieces.007
+    400094: Metal pieces.008
+    400096: Metal pieces.009
+    400098: Metal pieces.010
+    400100: Metal pieces.011
+    400102: Metal pieces.012
+    400104: Metal pieces.013
+    400106: Metal pieces.014
+    400108: Metal pieces.015
+    400110: Metal pieces.016
+    400112: Metal pieces.017
+    400114: Metal pieces.018
+    400116: Metal pieces.019
+    400118: Metal pieces.020
+    400120: Metal pieces.021
+    400122: Metal pieces.022
+    400124: Metal pieces.023
+    400126: Metal pieces.024
+    400128: Metal pieces.025
+    400130: Metal pieces.026
+    400132: Metal pieces.027
+    400134: Metal pieces.028
+    400136: Metal pieces.029
+    400138: Metal pieces.030
+    400140: Metal pieces.031
+    400142: Metal pieces.032
+    400144: Metal pieces.033
+    400146: mobo
+    400148: //RootNode
+    400150: ram1.012
+    400152: ram1.013
+    400154: ram1.014
+    400156: ram1.015
+    400158: ram1.016
+    400160: ram1.017
+    400162: ram1.018
+    400164: ram1.019
+    400166: ram1.020
+    400168: Sphere
+    400170: Sphere.001
+    400172: Sphere.002
+    400174: Sphere.003
+    2100000: No Name
+    2300000: Component.000
+    2300002: Component.001
+    2300004: Component.002
+    2300006: Component.003
+    2300008: Component.004
+    2300010: Component.005
+    2300012: Component.006
+    2300014: Component.007
+    2300016: Component.008
+    2300018: Component.009
+    2300020: Component.010
+    2300022: Component.011
+    2300024: Component.012
+    2300026: Component.013
+    2300028: Component.014
+    2300030: Component.015
+    2300032: Component.016
+    2300034: Component.017
+    2300036: Component.018
+    2300038: Component.019
+    2300040: Component.020
+    2300042: Component.021
+    2300044: Component.022
+    2300046: Component.023
+    2300048: Cube.000
+    2300050: Cube.001
+    2300052: Cube.006
+    2300054: Cube.007
+    2300056: Cube.009
+    2300058: Cube.012
+    2300060: Cube.015
+    2300062: Cube.027
+    2300064: Cube.029
+    2300066: Cube.030
+    2300068: Cylinder.000
+    2300070: Cylinder.287
+    2300072: Cylinder.288
+    2300074: Cylinder.289
+    2300076: Cylinder.290
+    2300078: Metal pieces
+    2300080: Metal pieces.001
+    2300082: Metal pieces.002
+    2300084: Metal pieces.003
+    2300086: Metal pieces.004
+    2300088: Metal pieces.005
+    2300090: Metal pieces.006
+    2300092: Metal pieces.007
+    2300094: Metal pieces.008
+    2300096: Metal pieces.009
+    2300098: Metal pieces.010
+    2300100: Metal pieces.011
+    2300102: Metal pieces.012
+    2300104: Metal pieces.013
+    2300106: Metal pieces.014
+    2300108: Metal pieces.015
+    2300110: Metal pieces.016
+    2300112: Metal pieces.017
+    2300114: Metal pieces.018
+    2300116: Metal pieces.019
+    2300118: Metal pieces.020
+    2300120: Metal pieces.021
+    2300122: Metal pieces.022
+    2300124: Metal pieces.023
+    2300126: Metal pieces.024
+    2300128: Metal pieces.025
+    2300130: Metal pieces.026
+    2300132: Metal pieces.027
+    2300134: Metal pieces.028
+    2300136: Metal pieces.029
+    2300138: Metal pieces.030
+    2300140: Metal pieces.031
+    2300142: Metal pieces.032
+    2300144: Metal pieces.033
+    2300146: mobo
+    2300148: ram1.012
+    2300150: ram1.013
+    2300152: ram1.014
+    2300154: ram1.015
+    2300156: ram1.016
+    2300158: ram1.017
+    2300160: ram1.018
+    2300162: ram1.019
+    2300164: ram1.020
+    2300166: Sphere
+    2300168: Sphere.001
+    2300170: Sphere.002
+    2300172: Sphere.003
+    3300000: Component.000
+    3300002: Component.001
+    3300004: Component.002
+    3300006: Component.003
+    3300008: Component.004
+    3300010: Component.005
+    3300012: Component.006
+    3300014: Component.007
+    3300016: Component.008
+    3300018: Component.009
+    3300020: Component.010
+    3300022: Component.011
+    3300024: Component.012
+    3300026: Component.013
+    3300028: Component.014
+    3300030: Component.015
+    3300032: Component.016
+    3300034: Component.017
+    3300036: Component.018
+    3300038: Component.019
+    3300040: Component.020
+    3300042: Component.021
+    3300044: Component.022
+    3300046: Component.023
+    3300048: Cube.000
+    3300050: Cube.001
+    3300052: Cube.006
+    3300054: Cube.007
+    3300056: Cube.009
+    3300058: Cube.012
+    3300060: Cube.015
+    3300062: Cube.027
+    3300064: Cube.029
+    3300066: Cube.030
+    3300068: Cylinder.000
+    3300070: Cylinder.287
+    3300072: Cylinder.288
+    3300074: Cylinder.289
+    3300076: Cylinder.290
+    3300078: Metal pieces
+    3300080: Metal pieces.001
+    3300082: Metal pieces.002
+    3300084: Metal pieces.003
+    3300086: Metal pieces.004
+    3300088: Metal pieces.005
+    3300090: Metal pieces.006
+    3300092: Metal pieces.007
+    3300094: Metal pieces.008
+    3300096: Metal pieces.009
+    3300098: Metal pieces.010
+    3300100: Metal pieces.011
+    3300102: Metal pieces.012
+    3300104: Metal pieces.013
+    3300106: Metal pieces.014
+    3300108: Metal pieces.015
+    3300110: Metal pieces.016
+    3300112: Metal pieces.017
+    3300114: Metal pieces.018
+    3300116: Metal pieces.019
+    3300118: Metal pieces.020
+    3300120: Metal pieces.021
+    3300122: Metal pieces.022
+    3300124: Metal pieces.023
+    3300126: Metal pieces.024
+    3300128: Metal pieces.025
+    3300130: Metal pieces.026
+    3300132: Metal pieces.027
+    3300134: Metal pieces.028
+    3300136: Metal pieces.029
+    3300138: Metal pieces.030
+    3300140: Metal pieces.031
+    3300142: Metal pieces.032
+    3300144: Metal pieces.033
+    3300146: mobo
+    3300148: ram1.012
+    3300150: ram1.013
+    3300152: ram1.014
+    3300154: ram1.015
+    3300156: ram1.016
+    3300158: ram1.017
+    3300160: ram1.018
+    3300162: ram1.019
+    3300164: ram1.020
+    3300166: Sphere
+    3300168: Sphere.001
+    3300170: Sphere.002
+    3300172: Sphere.003
+    4300000: Metal pieces.033
+    4300002: Metal pieces.032
+    4300004: Metal pieces.031
+    4300006: Metal pieces.030
+    4300008: Metal pieces.029
+    4300010: Metal pieces.028
+    4300012: Metal pieces.027
+    4300014: Metal pieces.026
+    4300016: Metal pieces.025
+    4300018: Metal pieces.024
+    4300020: Metal pieces.023
+    4300022: Metal pieces.022
+    4300024: Metal pieces.021
+    4300026: Metal pieces.020
+    4300028: Metal pieces.019
+    4300030: Metal pieces.018
+    4300032: Metal pieces.017
+    4300034: Metal pieces.016
+    4300036: Metal pieces.015
+    4300038: Metal pieces.014
+    4300040: Metal pieces.013
+    4300042: Metal pieces.012
+    4300044: Metal pieces.011
+    4300046: Metal pieces.010
+    4300048: Metal pieces.009
+    4300050: Metal pieces.008
+    4300052: Metal pieces.007
+    4300054: Metal pieces.006
+    4300056: Metal pieces.005
+    4300058: Metal pieces.004
+    4300060: Metal pieces.003
+    4300062: Metal pieces.002
+    4300064: Metal pieces.001
+    4300066: Cylinder.000
+    4300068: Cube.001
+    4300070: Cube.000
+    4300072: Component.023
+    4300074: Component.022
+    4300076: Component.021
+    4300078: Component.020
+    4300080: Component.019
+    4300082: Component.018
+    4300084: Component.017
+    4300086: Component.016
+    4300088: Component.015
+    4300090: Component.014
+    4300092: Component.013
+    4300094: Component.012
+    4300096: Component.011
+    4300098: Cylinder.290
+    4300100: Cube.030
+    4300102: Cube.029
+    4300104: Cube.027
+    4300106: Metal pieces
+    4300108: Cylinder.289
+    4300110: Cylinder.288
+    4300112: Cylinder.287
+    4300114: ram1.020
+    4300116: ram1.019
+    4300118: ram1.018
+    4300120: ram1.017
+    4300122: ram1.016
+    4300124: ram1.015
+    4300126: ram1.014
+    4300128: ram1.013
+    4300130: ram1.012
+    4300132: Cube.015
+    4300134: Component.007
+    4300136: Component.010
+    4300138: Sphere.003
+    4300140: Cube.012
+    4300142: Component.009
+    4300144: Component.008
+    4300146: Cube.009
+    4300148: Sphere.002
+    4300150: Component.000
+    4300152: Cube.007
+    4300154: Sphere.001
+    4300156: Sphere
+    4300158: Cube.006
+    4300160: Component.005
+    4300162: Component.006
+    4300164: Component.004
+    4300166: Component.003
+    4300168: Component.002
+    4300170: Component.001
+    4300172: mobo
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

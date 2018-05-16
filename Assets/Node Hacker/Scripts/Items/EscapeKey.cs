@@ -17,5 +17,6 @@ public class EscapeKey : MonoBehaviour, IItem {
 
     private void Awake() {
         ItemId = Guid.NewGuid();
+        Initialize();
     }
 }

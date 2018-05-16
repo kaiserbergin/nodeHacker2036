@@ -5,6 +5,14 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour {
     public List<InventorySlot> inventorySlots;
 
+    private void Awake() {
+        if (inventorySlots == null) inventorySlots = new List<InventorySlot>();
+    }
+
+    public void AddUniqueItem(IItem item) {
+        inventorySlots.Add(new InventorySlot(item, 1));
+    }
+
     public void AddItem(IItem item) {
         int matchedInventorySlotIndex = inventorySlots.FindIndex(slot => slot.item.ItemType.Equals(item.ItemType));
         if (matchedInventorySlotIndex >= 0) {
@@ -41,5 +49,15 @@ public class InventoryManager : MonoBehaviour {
         } else {
             throw new System.InvalidOperationException("Cannot use an item that is not in the inventory.");
         }
+    }
+
+    public bool CheckItemById(IItem item) {
+        int matchedInventorySlotIndex = inventorySlots.FindIndex(slot => slot.item.ItemId == item.ItemId);
+        return matchedInventorySlotIndex > -1;
+    }
+
+    public bool CheckItemByName(IItem item) {
+        int matchedInventorySlotIndex = inventorySlots.FindIndex(slot => slot.item.ItemName == item.ItemName);
+        return matchedInventorySlotIndex > -1;
     }
 }

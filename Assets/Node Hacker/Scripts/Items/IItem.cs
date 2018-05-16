@@ -3,7 +3,8 @@
 public enum ItemTypes {
     ESCAPE_KEY,
     RX_PILLS,
-    SIN
+    SIN,
+    VHS_TAPE
 }
 
 public interface IItem {

@@ -14,8 +14,7 @@ public class VisualDetection : MonoBehaviour {
         float angle = Vector3.Angle(direction, transform.forward);
         if(angle < fieldOfView * .5f) {
             RaycastHit hit;
-
-            if(Physics.Raycast(transform.position, direction.normalized, out hit, Mathf.Infinity, layerMask)) {
+            if(Physics.Raycast(transform.position, direction.normalized, out hit, Mathf.Infinity, layerMask, QueryTriggerInteraction.Ignore)) {
                 return hit.collider.gameObject.GetInstanceID() == target.gameObject.GetInstanceID();
             }
         }

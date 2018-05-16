@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Node Hacker/Tests/Combat/Standard ICE Combat.unity
+- path: Assets/Node Hacker/Scenes/Dry Cleaners.unity
   isLoaded: 1
   isActive: 1

@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class SIN : MonoBehaviour {
+public class SIN : MonoBehaviour, IItem {
     //Interface Properties
     public Guid ItemId { get; private set; }
     public ItemTypes ItemType { get; private set; }
@@ -17,5 +17,6 @@ public class SIN : MonoBehaviour {
 
     private void Awake() {
         ItemId = Guid.NewGuid();
+        Initialize();
     }
 }
