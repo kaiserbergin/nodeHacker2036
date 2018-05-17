@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 public class CollectVHS : MonoBehaviour {
     public List<string> acceptableTags;
-    public InventoryManager inventoryManager;
 
     private VhsTape vhsTape;
+
+    public float rotationSpeed = .25f;
 
     private void Awake() {
         if (acceptableTags == null || acceptableTags.Count == 0) {
@@ -21,9 +22,14 @@ public class CollectVHS : MonoBehaviour {
         vhsTape = transform.GetComponent<VhsTape>();
     }
 
+    private void Update() {
+        float step = rotationSpeed * Time.smoothDeltaTime;
+        transform.Rotate(0, 0, rotationSpeed);
+    }
+
     private void OnTriggerEnter(Collider other) {
         if (acceptableTags.Contains(other.tag) && vhsTape != null) {
-            inventoryManager.AddUniqueItem(vhsTape);
+            InventoryManager.instance.AddUniqueItem(vhsTape);
             gameObject.SetActive(false);
         }
     }

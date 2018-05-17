@@ -4,4 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Node Hacker/Scenes/Dry Cleaners.unity
+    guid: 1d95753022fbe104b913d5182d538553
+  - enabled: 1
+    path: Assets/Node Hacker/Scenes/Victory Room.unity
+    guid: b649c2874fbfab04fa6e3d5cae39ce6c
+  m_configObjects: {}

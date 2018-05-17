@@ -662,7 +662,7 @@
     <Compile Include="Assets\Node Hacker\Scripts\Common\Health.cs" />
     <Compile Include="Assets\Node Hacker\Scripts\Common\Lifespan.cs" />
     <Compile Include="Assets\Node Hacker\Scripts\Game Management\AudioManager.cs" />
-    <Compile Include="Assets\Node Hacker\Scripts\Game Management\GameManger.cs" />
+    <Compile Include="Assets\Node Hacker\Scripts\Game Management\GameManager.cs" />
     <Compile Include="Assets\Node Hacker\Scripts\Game Management\Inventory\InventoryManager.cs" />
     <Compile Include="Assets\Node Hacker\Scripts\Game Management\Inventory\InventorySlot.cs" />
     <Compile Include="Assets\Node Hacker\Scripts\Game Management\Loader.cs" />
@@ -673,6 +673,7 @@
     <Compile Include="Assets\Node Hacker\Scripts\Items\SelectVideo.cs" />
     <Compile Include="Assets\Node Hacker\Scripts\Items\SIN.cs" />
     <Compile Include="Assets\Node Hacker\Scripts\Items\VhsTape.cs" />
+    <Compile Include="Assets\Node Hacker\Scripts\Levels\Exit.cs" />
     <Compile Include="Assets\Node Hacker\Scripts\Mini Games\MiniGameManager.cs" />
     <Compile Include="Assets\Node Hacker\Scripts\Mini Games\MiniGameZone.cs" />
     <Compile Include="Assets\Node Hacker\Scripts\Mini Games\OnFailedEvent.cs" />

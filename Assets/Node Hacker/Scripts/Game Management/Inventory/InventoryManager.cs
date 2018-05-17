@@ -3,9 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour {
+    public static InventoryManager instance;
+
     public List<InventorySlot> inventorySlots;
 
     private void Awake() {
+        if (instance == null) {
+            instance = this;
+        } else if (instance != this) {
+            Destroy(gameObject);
+        }
+        DontDestroyOnLoad(gameObject);
+
         if (inventorySlots == null) inventorySlots = new List<InventorySlot>();
     }
 

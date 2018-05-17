@@ -2,9 +2,6 @@
 using UnityEngine;
 
 public class RollerBall : MonoBehaviour {
-    //Managers
-    public MiniGameManager miniGameManager;
-
     //Mini Game Objects
     public GameObject gameBoard;
     public Ball ball; 
@@ -41,7 +38,7 @@ public class RollerBall : MonoBehaviour {
     public void OnGoalSphereCollected() {
         goalSpheresCollected++;
         if(goalSpheresCollected == goalSpheres.Length) {
-            miniGameManager.MiniGameSolved(gameId, prize, successMessage);
+            MiniGameManager.instance.MiniGameSolved(gameId, prize, successMessage);
             for (int i = 0; i < penaltySpheres.Length; i++) {
                 penaltySpheres[i].gameObject.SetActive(false);
             }
@@ -49,7 +46,7 @@ public class RollerBall : MonoBehaviour {
     }
 
     public void OnPenaltySphereCollected() {
-        miniGameManager.MiniGameFailed(gameId, damage, failureMessage);
+        MiniGameManager.instance.MiniGameFailed(gameId, damage, failureMessage);
         goalSpheresCollected = 0;
         for (int i = 0; i < goalSpheres.Length; i++) {
             goalSpheres[i].gameObject.SetActive(true);

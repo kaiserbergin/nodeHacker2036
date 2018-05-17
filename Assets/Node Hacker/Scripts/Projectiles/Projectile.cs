@@ -20,8 +20,8 @@ public class Projectile : MonoBehaviour {
     private void OnCollisionEnter(Collision collision) {
         foreach (LayerMask mask in layerWhiteList) {
             if (1 >> mask == collision.gameObject.layer) {
-                if (collision.transform.root.GetComponentInChildren<Damage>() != null && dealDamage != null) {
-                    collision.transform.root.GetComponentInChildren<Damage>().TakeDamage(dealDamage.DealActualDamage());
+                if (collision.transform.GetComponentInChildren<Damage>() != null && dealDamage != null) {
+                    collision.transform.GetComponentInChildren<Damage>().TakeDamage(dealDamage.DealActualDamage());
                 }
                 gameObject.SetActive(false);
                 break;
