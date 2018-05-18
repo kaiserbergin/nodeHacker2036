@@ -8,7 +8,7 @@ public class PlayerTeleporter : MonoBehaviour {
     public GameObject teleportationLocationMarker;
 
     [Header("Settings")]
-    public LayerMask platformMask;
+    public LayerMask terrainMask;
     public LayerMask teleportationSurface;
     public GameObject origin;
     public GameObject player;
@@ -26,8 +26,10 @@ public class PlayerTeleporter : MonoBehaviour {
 
         RaycastHit hit;
 
-        // Hand created surface collider
-        if (Physics.Raycast(origin.transform.position, origin.transform.forward, out hit, 15, teleportationSurface)) {
+        // If we hit terrain, tp to groud in front, else tp to surface at distance
+        if (Physics.Raycast(origin.transform.position, origin.transform.forward, out hit, 15, terrainMask)) {
+            TerrainCast(hit);
+        } else if (Physics.Raycast(origin.transform.position, origin.transform.forward, out hit, 15, teleportationSurface)) {
             teleportationCoords = hit.point;
             SetTeleportationIndicators(teleportationCoords);
         } else {
@@ -43,11 +45,20 @@ public class PlayerTeleporter : MonoBehaviour {
     private void GroundCast() {
         teleportationCoords = player.transform.position;
         RaycastHit groundRay;
+        RaycastHit terrainRay;
         Vector3 pointInSpace = origin.transform.forward * 15 + origin.transform.position;
-        if (Physics.Raycast(pointInSpace, -Vector3.up, out groundRay, 100, Physics.DefaultRaycastLayers)) {
-            if (groundRay.collider.gameObject.layer.CompareTo(1 << teleportationSurface.value) == 1) {
-                teleportationCoords = groundRay.point;
-            }
+        if (!Physics.Raycast(pointInSpace, -Vector3.up, out terrainRay, 100, terrainMask) && Physics.Raycast(pointInSpace, -Vector3.up, out groundRay, 100, teleportationSurface)) {
+            teleportationCoords = groundRay.point;
+        }
+        SetTeleportationIndicators(pointInSpace, teleportationCoords);
+    }
+
+    private void TerrainCast(RaycastHit terrainHit) {
+        teleportationCoords = player.transform.position;
+        RaycastHit groundRay;
+        Vector3 pointInSpace = origin.transform.forward * 15 + origin.transform.position;
+        if (Physics.Raycast(terrainHit.point, -Vector3.up, out groundRay, 100, teleportationSurface)) {
+            teleportationCoords = groundRay.point;
         }
         SetTeleportationIndicators(pointInSpace, teleportationCoords);
     }

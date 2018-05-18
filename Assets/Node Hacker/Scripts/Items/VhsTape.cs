@@ -14,12 +14,14 @@ public class VhsTape : MonoBehaviour, IItem {
     public List<string> acceptableTags;
 
     public void Initialize() {
+        ItemId = Guid.NewGuid();
         ItemName = itemName;
         ItemType = ItemTypes.VHS_TAPE;
     }
 
-    private void Awake() {
-        ItemId = Guid.NewGuid();
-        Initialize();
+    private void Awake() {        
+        if(ItemName == null) {
+            Initialize();
+        }
     }
 }

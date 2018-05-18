@@ -4,9 +4,10 @@ public class MiniGameZone : MonoBehaviour {
     public OculusTouchInterractionInterface oculusTouchInterractionInterface;
     public OculusTouchWeaponInterface oculusTouchWeaponInterface;
     public GameObject weapon;
+    public GameObject miniGame;
 
     private void OnTriggerEnter(Collider other) {
-        if(other.tag == "Player") {
+        if (other.tag == "Player") {
             oculusTouchInterractionInterface.isInterfaceEnabled = true;
             oculusTouchWeaponInterface.isInterfaceEnabled = false;
             if (weapon != null) {
@@ -20,6 +21,9 @@ public class MiniGameZone : MonoBehaviour {
             oculusTouchWeaponInterface.isInterfaceEnabled = true;
             if (weapon != null) {
                 weapon.SetActive(true);
+            }
+            if (miniGame != null) {
+                miniGame.GetComponentInChildren<IMiniGame>().ResetMiniGame();
             }
         }
     }

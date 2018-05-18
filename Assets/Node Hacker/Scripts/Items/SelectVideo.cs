@@ -6,8 +6,10 @@ using UnityEngine.Video;
 public class SelectVideo : MonoBehaviour {
     public VideoClip videoClip;
     public VideoPlayer videoPlayer;
-    public AudioSource audioSource;
+    public AudioSource videoAudioSource;
     public List<string> acceptableTags;
+
+    private AudioSource interractionAudioSource;
 
     private void Awake() {
         if (acceptableTags == null || acceptableTags.Count == 0) {
@@ -17,10 +19,12 @@ public class SelectVideo : MonoBehaviour {
                 "Right Hand"
             };
         }
+        interractionAudioSource = gameObject.GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (acceptableTags.Contains(other.tag) && videoClip != null && videoPlayer != null) {
+        if ((acceptableTags.Contains(other.tag) || other.gameObject.layer == LayerMask.NameToLayer("Projectile")) && videoClip != null && videoPlayer != null) {
+            interractionAudioSource.Play();
             if(videoPlayer.clip != null && videoPlayer.clip.name == videoClip.name) {
                 if (videoPlayer.isPlaying) {
                     videoPlayer.Pause();
@@ -30,7 +34,7 @@ public class SelectVideo : MonoBehaviour {
             } else {
                 if (videoPlayer.isPlaying) videoPlayer.Pause();
                 videoPlayer.clip = videoClip;
-                videoPlayer.SetTargetAudioSource(0, audioSource);
+                videoPlayer.SetTargetAudioSource(0, videoAudioSource);
                 videoPlayer.Play();
             }
         }

@@ -20,10 +20,10 @@ TagManager:
   - Player
   - Projectile
   - Teleportation Surface
-  - 
-  - 
-  - 
-  - 
+  - Player Hands
+  - Player Head
+  - Ignore Player
+  - Terrain
   - 
   - 
   - 

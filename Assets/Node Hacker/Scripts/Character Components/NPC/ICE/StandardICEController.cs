@@ -12,22 +12,23 @@ public class StandardICEController : MonoBehaviour {
     private ActionCoolDown fireProjectileCooldown;
     public float fireProjectileCooldownTime;
 
-    private LookRotation lookRotation;
-
     public GameObject target;
+
+    public AudioSource alertSource;
+
     private Facing facing;
-
     private BasicPatrol basicPatrol;
-
     private NavMeshAgent navMeshAgent;
-
     private BasicSearch basicSearch;
-
+    private LookRotation lookRotation;
     private bool searchAttempted = false;
-    private bool targetSighted = false;
+    public bool targetSighted = false;
+
+    //Health and Damage
+    public Health health;
 
     // Use this for initialization
-    void Start () {
+    void Start() {
         fireProjectile = GetComponent<FireProjectile>();
 
         fireProjectileCooldown = gameObject.AddComponent<ActionCoolDown>();
@@ -40,13 +41,15 @@ public class StandardICEController : MonoBehaviour {
         visionRange = transform.GetComponentInChildren<VisionRange>();
         navMeshAgent = transform.GetComponentInChildren<NavMeshAgent>();
 
+        health = transform.GetComponentInChildren<Health>();
+
         if (target != null) {
             visionRange.validTargets = new List<GameObject> { target };
-        }        
+        }
     }
-	
-	// Update is called once per frame
-	void Update () {        
+
+    // Update is called once per frame
+    void Update() {
         #region Rotate towards Target
         if (target != null) {
             if (visionRange.CanViewTarget(target)) {
@@ -60,8 +63,11 @@ public class StandardICEController : MonoBehaviour {
                 if (basicSearch != null && basicSearch.searchEnabled) {
                     basicSearch.searchEnabled = false;
                 }
-                if(navMeshAgent.isActiveAndEnabled) {
+                if (navMeshAgent.isActiveAndEnabled) {
                     navMeshAgent.enabled = false;
+                    if (alertSource != null) {
+                        alertSource.Play();
+                    }
                 }
 
                 lookRotation.transform.rotation = lookRotation.GetRotationTowardsTarget(target.transform.position);
@@ -88,7 +94,7 @@ public class StandardICEController : MonoBehaviour {
                     basicPatrol.NavigateToNextWayPoint();
                 }
             }
-        }        
+        }
         #endregion
     }
 }

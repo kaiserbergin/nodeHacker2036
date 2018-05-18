@@ -24,8 +24,4 @@ public class AvailableVideosToPlay : MonoBehaviour {
             }
         }
     }
-
-    private void Update() {
-        EnableAvailableVideos();
-    }
 }

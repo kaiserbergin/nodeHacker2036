@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class CollectVHS : MonoBehaviour {
     public List<string> acceptableTags;
+    public GameObject collectedVHS;
 
     private VhsTape vhsTape;
 
@@ -28,9 +29,14 @@ public class CollectVHS : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (acceptableTags.Contains(other.tag) && vhsTape != null) {
+        if ((acceptableTags.Contains(other.tag) || other.gameObject.layer == LayerMask.NameToLayer("Projectile")) && vhsTape != null) {
             InventoryManager.instance.AddUniqueItem(vhsTape);
             gameObject.SetActive(false);
+            if (collectedVHS != null) {
+                collectedVHS.transform.rotation = transform.rotation;
+                collectedVHS.transform.position = transform.position;
+                collectedVHS.SetActive(true);
+            }
         }
     }
 }
