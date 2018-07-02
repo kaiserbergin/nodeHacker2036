@@ -11,7 +11,7 @@ public class StandarICEDying : MonoBehaviour {
     void Start() {
         Rigidbody[] rbs = transform.GetComponentsInChildren<Rigidbody>();
         foreach (Rigidbody rb in rbs) {
-            rb.AddExplosionForce(explosionForce, transform.position, explosionRadius);
+            rb.AddExplosionForce(explosionForce, rb.transform.position, explosionRadius);
         }
         spawnTime = Time.time;
     }

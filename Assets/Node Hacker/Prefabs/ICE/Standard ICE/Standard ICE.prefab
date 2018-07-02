@@ -752,7 +752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fieldOfView: 160
-  alwaysSeenAtDistance: 3
+  alwaysSeenAtDistance: 6
 --- !u!114 &114520045629199860
 MonoBehaviour:
   m_ObjectHideFlags: 1
