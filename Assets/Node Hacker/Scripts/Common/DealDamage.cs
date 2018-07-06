@@ -24,4 +24,8 @@ public class DealDamage : MonoBehaviour {
     public void MultiplyBaseDamage(float damageMultiplier) {
         actualDamage = (int)(baseDamage * damageMultiplier);
     }
+
+    public int CalculateMultipliedBaseDamage(float damageMultiplier) {
+        return (int)(baseDamage * damageMultiplier);
+    }
 }
