@@ -19,11 +19,13 @@ public class LaserSwordController : MonoBehaviour {
     private void OnCollisionEnter(Collision collision) {
         Debug.Log($"on collision with {collision.gameObject.name}");
         Damage targetDamageComponent = collision.gameObject.GetComponentInChildren<Damage>();
-        Debug.Log($"Gonna test sword before dealing dmg! remaingin chrgs: {weaponCharges.remainingCharges} & target {targetDamageComponent}");
         if (targetDamageComponent != null && weaponCharges.remainingCharges > 0) {
-            Debug.Log("doing dmg");
             weaponCharges.ConsumeCharges(1);
             targetDamageComponent.TakeDamage(CalculateDamage());
         }
+    }
+
+    private void OnCollisionExit(Collision collision) {
+        Debug.Log($"on collision exit with {collision.gameObject.name}");
     }
 }

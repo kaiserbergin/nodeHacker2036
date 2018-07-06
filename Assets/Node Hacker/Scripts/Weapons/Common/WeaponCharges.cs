@@ -29,7 +29,6 @@ public class WeaponCharges : MonoBehaviour {
         } else {
             Debug.LogError("tried to use unavailable charges");
         }
-        Debug.Log($"remaing charges after consumption: {remainingCharges}");
         if(autoGenerateCharges) {
             if(currentRechargeCoroutine == null) {
                 currentRechargeCoroutine = TriggerRechargeTime();
@@ -50,8 +49,6 @@ public class WeaponCharges : MonoBehaviour {
         } else {
             remainingCharges = remainingCharges + rechargeCount;
         }
-
-        Debug.Log($"remaing charges after restore: {remainingCharges}");
         if (remainingCharges < chargeCapacity) {
             currentRechargeCoroutine = TriggerRechargeTime();
             StartCoroutine(currentRechargeCoroutine);
@@ -60,12 +57,9 @@ public class WeaponCharges : MonoBehaviour {
 
     IEnumerator TriggerRechargeTime() {
         while (chargeCapacity > remainingCharges) {
-            Debug.Log($"Starting recharge at: {Time.time}");
             int rechargeDurationIndex = chargeCapacity - remainingCharges - 1 > rechargeDurations.Length ? rechargeDurations.Length - 1 : chargeCapacity - remainingCharges - 1;
             yield return new WaitForSeconds(rechargeDurations[rechargeDurationIndex]);
-            Debug.Log($"Adding charge at: {Time.time}");
             remainingCharges = remainingCharges + 1;
-            Debug.Log($"remainign charges in cooroutine loop: {remainingCharges}");
         }
     }
 }
